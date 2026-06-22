@@ -123,7 +123,7 @@ your-project/
 
 ```bash
 # Clone
-git clone https://github.com/santisiri/usuarios-mcp.git
+git clone https://github.com/Sebtiago/usuarios-mcp.git
 cd usuarios-mcp
 
 # Install dependencies
@@ -161,7 +161,7 @@ This tool implements the service design methodology from:
 
 ## 📄 License
 
-MIT © [Santiago Sirias](https://github.com/santisiri)
+MIT © [Santiago Sirias](https://github.com/Sebtiago)
 
 ---
 

@@ -22,9 +22,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/santisiri/usuarios-mcp"
-Repository = "https://github.com/santisiri/usuarios-mcp"
-Issues = "https://github.com/santisiri/usuarios-mcp/issues"
+Homepage = "https://github.com/Sebtiago/usuarios-mcp"
+Repository = "https://github.com/Sebtiago/usuarios-mcp"
+Issues = "https://github.com/Sebtiago/usuarios-mcp/issues"
 
 [project.scripts]
 usuarios-mcp = "main:main"
