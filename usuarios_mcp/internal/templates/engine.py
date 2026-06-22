@@ -36,7 +36,7 @@ def _get_default_templates() -> dict[str, str]:
                 _TEMPLATES[name] = f.read()
 
     # Fall back to embedded defaults
-    from internal.templates.defaults import DEFAULT_TEMPLATES
+    from usuarios_mcp.internal.templates.defaults import DEFAULT_TEMPLATES
     for name, content in DEFAULT_TEMPLATES.items():
         if name not in _TEMPLATES:
             _TEMPLATES[name] = content

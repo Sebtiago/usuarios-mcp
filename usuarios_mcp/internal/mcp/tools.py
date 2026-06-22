@@ -12,16 +12,16 @@ import os
 
 from mcp.server.fastmcp import FastMCP
 
-from internal.project.config import (
+from usuarios_mcp.internal.project.config import (
     init_project as cfg_init,
     get_config,
     set_config,
 )
-from internal.project.research import (
+from usuarios_mcp.internal.project.research import (
     list_research_files,
     read_research_files,
 )
-from internal.project.profiles import (
+from usuarios_mcp.internal.project.profiles import (
     save_profile as prof_save,
     list_profiles as prof_list,
     get_profile as prof_get,
@@ -29,14 +29,14 @@ from internal.project.profiles import (
     list_validations,
     get_validation,
 )
-from internal.templates.engine import (
+from usuarios_mcp.internal.templates.engine import (
     render_template,
     load_project_template,
 )
-from internal.schema.patterns import PATTERNS_SCHEMA
-from internal.schema.profile import PROFILE_SCHEMA, PROFILE_MD_TEMPLATE
-from internal.schema.validation import VALIDATION_SCHEMA
-from internal.mcp.server import INSTRUCTIONS
+from usuarios_mcp.internal.schema.patterns import PATTERNS_SCHEMA
+from usuarios_mcp.internal.schema.profile import PROFILE_SCHEMA, PROFILE_MD_TEMPLATE
+from usuarios_mcp.internal.schema.validation import VALIDATION_SCHEMA
+from usuarios_mcp.internal.mcp.server import INSTRUCTIONS
 
 # ---------------------------------------------------------------------------
 # Tool registration
@@ -518,7 +518,7 @@ def _register_status(server: FastMCP) -> None:
             # Research
             research_dir = usuarios_dir / "research"
             if research_dir.exists():
-                from internal.project.research import SUPPORTED_EXTENSIONS
+                from usuarios_mcp.internal.project.research import SUPPORTED_EXTENSIONS
                 research_files = sorted(
                     [f for f in research_dir.iterdir()
                      if f.is_file() and f.suffix in SUPPORTED_EXTENSIONS and not f.name.startswith(".")]

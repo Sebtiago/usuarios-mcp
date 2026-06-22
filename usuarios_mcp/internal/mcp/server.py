@@ -113,7 +113,7 @@ def create_server() -> FastMCP:
 
 def _register_tools(server: FastMCP) -> None:
     """Register all tool handlers on the server."""
-    from internal.mcp.tools import register_tools
+    from usuarios_mcp.internal.mcp.tools import register_tools
 
     register_tools(server)
 
