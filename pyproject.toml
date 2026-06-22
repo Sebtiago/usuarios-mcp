@@ -1,0 +1,33 @@
+[project]
+name = "usuarios-mcp"
+version = "0.1.0"
+description = "MCP server for synthetic user profile generation in service design"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+authors = [
+    {name = "Santiago Sirias", email = "santiago@sirias.dev"},
+]
+keywords = ["mcp", "service-design", "user-research", "personas", "design-thinking"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+]
+dependencies = [
+    "mcp[cli]>=1.28.0",
+    "pyyaml>=6.0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/santisiri/usuarios-mcp"
+Repository = "https://github.com/santisiri/usuarios-mcp"
+Issues = "https://github.com/santisiri/usuarios-mcp/issues"
+
+[project.scripts]
+usuarios-mcp = "main:main"
+
+[tool.uv]
+package = false
