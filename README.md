@@ -40,7 +40,11 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
   "mcpServers": {
     "usuarios": {
       "command": "uvx",
-      "args": ["usuarios-mcp"]
+      "args": [
+        "--from",
+        "git+https://github.com/Sebtiago/usuarios-mcp",
+        "usuarios-mcp"
+      ]
     }
   }
 }
@@ -51,7 +55,11 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 ```toml
 [mcp_servers.usuarios]
 command = "uvx"
-args = ["usuarios-mcp"]
+args = [
+  "--from",
+  "git+https://github.com/Sebtiago/usuarios-mcp",
+  "usuarios-mcp"
+]
 ```
 
 ### 3. Restart your app and start chatting

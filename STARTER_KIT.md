@@ -23,7 +23,10 @@ Copiá el bloque de abajo y envialo por Slack/WhatsApp a tu equipo:
 > ```
 > 3. Abrí Claude Desktop. Andá a **Settings → MCP Servers → Add MCP Server**
 > 4. En **Command** poné: `uvx`
-> 5. En **Args** poné: `usuarios-mcp`
+> 5. En **Args** poné tres líneas:
+>    - `--from`
+>    - `git+https://github.com/Sebtiago/usuarios-mcp`
+>    - `usuarios-mcp`
 > 6. Cerrá y volvé a abrir Claude Desktop
 > 7. Escribile esto a Claude:
 >
@@ -48,7 +51,10 @@ Copiá el bloque de abajo y envialo por Slack/WhatsApp a tu equipo:
 > 3. Abrí Codex Desktop. Andá a **Settings → MCP**
 > 4. Agregá un nuevo server con:
 >    - **Command**: `uvx`
->    - **Args**: `usuarios-mcp`
+>    - **Args** (tres líneas):
+>      - `--from`
+>      - `git+https://github.com/Sebtiago/usuarios-mcp`
+>      - `usuarios-mcp`
 > 5. Reiniciá Codex
 > 6. Escribile:
 > ```
